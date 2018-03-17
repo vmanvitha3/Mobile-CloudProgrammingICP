@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
         }
         if(!validationFlag){
             errorText.setVisibility(View.VISIBLE);
+
         }
         else {
             //This code redirects from login page to homepage
