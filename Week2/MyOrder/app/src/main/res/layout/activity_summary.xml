@@ -15,31 +15,35 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:visibility="invisible"
-        android:layout_alignParentRight="@+id/view_summary"
+        android:layout_alignParentRight="true"
         android:src="@drawable/pepperoni"/>
+
     <ImageView
         android:id="@+id/view_mushrooms"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:visibility="invisible"
-        android:layout_alignParentRight="@+id/view_summary"
-        android:layout_alignBottom="@+id/view_pepperoni"
-        android:src="@drawable/Mushrooms"/>
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view_pepperoni"
+        android:src="@drawable/mushrooms"
+        android:visibility="invisible" />
+
     <ImageView
         android:id="@+id/view_cheese"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:visibility="invisible"
-        android:layout_alignParentRight="@+id/view_summary"
-        android:layout_alignBottom="@+id/view_mushrooms"
-        android:src="@drawable/cheese"/>
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view_mushrooms"
+        android:layout_marginTop="19dp"
+        android:src="@drawable/cheese"
+        android:visibility="invisible" />
+
     <ImageView
         android:id="@+id/view_olives"
         android:layout_width="48dp"
         android:layout_height="48dp"
-        android:visibility="invisible"
-        android:layout_alignParentRight="@+id/view_summary"
-        android:layout_alignBottom="@+id/view_cheese"
-        android:src="@drawable/olives"/>
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/view_cheese"
+        android:src="@drawable/olives"
+        android:visibility="invisible" />
 
 </RelativeLayout>

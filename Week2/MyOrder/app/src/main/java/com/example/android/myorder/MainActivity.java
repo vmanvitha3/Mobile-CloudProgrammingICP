@@ -154,6 +154,10 @@ public class MainActivity extends AppCompatActivity {
 
         Intent summary = new Intent(this, SummaryActivity.class);
         summary.putExtra("message", priceMessage);
+        summary.putExtra("pepperoni",hasPepperoni);
+        summary.putExtra("mushrooms",hasMushrooms);
+        summary.putExtra("extracheese",hasExtraCheese);
+        summary.putExtra("olives",hasOlives);
         startActivity(summary);
     }
 }
