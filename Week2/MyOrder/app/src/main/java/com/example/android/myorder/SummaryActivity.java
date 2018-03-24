@@ -12,13 +12,17 @@ public class SummaryActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_summary);
-
+        boolean flag = true;
         Intent intent = getIntent();
 
         String message = intent.getStringExtra("message");
 
         // Capture the layout's TextView and set the string as its text
         TextView txtView = (TextView)findViewById(R.id.view_summary);
-        txtView.setText(message);
+
+        if(flag) {
+            txtView.setText(message);
+            
+        }
     }
 }
